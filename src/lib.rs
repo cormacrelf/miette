@@ -4,14 +4,18 @@
 
 pub use miette_derive::*;
 
+pub use context::*;
 pub use error::*;
+pub use named_source::*;
 pub use printer::*;
 pub use protocol::*;
-pub use utils::*;
+pub use deprecated::*;
 
 mod chain;
+mod context;
 mod error;
+mod named_source;
 mod printer;
 mod protocol;
 mod source_impls;
-mod utils;
+mod deprecated;
